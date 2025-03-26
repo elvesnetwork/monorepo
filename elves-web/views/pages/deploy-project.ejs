@@ -1,0 +1,28 @@
+<%# pages/deploy-project.ejs %>
+
+<%- include('../layout', { 
+    title: title, 
+    description: description,
+    body: `
+
+    <main class="new-project-page">
+        <h1>Let's build something new</h1>
+        <p>To deploy a new Project, import an existing Git Repository or get started with one of our Templates.</p>
+
+        <div class="new-project-options">
+            <div class="import-repo">
+                <h2>Import Git Repository</h2>
+                <form>
+                    <select class="git-provider-dropdown">
+                        <option value="github">GitHub</option>
+                        <!-- Add more providers like GitLab, Bitbucket -->
+                    </select>
+                    <input type="text" placeholder="Select Git Namespace" class="git-namespace-input">
+                    <input type="search" placeholder="Search..." class="repo-search-input">
+                </form>
+            </div>
+        </div>
+    </main>
+
+    `
+}) %>

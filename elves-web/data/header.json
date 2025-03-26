@@ -1,0 +1,9 @@
+{
+  "logo": "images/header-logo.gif",
+  "navigation": [
+    { "name": "Home", "url": "#home" },
+    { "name": "Section 1", "url": "#section1" },
+    { "name": "Section 2", "url": "#section2" }
+  ]
+}
+

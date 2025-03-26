@@ -1,0 +1,79 @@
+<%# edits.ejs %>
+
+<%- include('header.ejs') %>
+
+<h1>Edit Links</h1>
+
+<form action="/edit" method="POST">
+    <h2>Header</h2>
+    <div>
+        <label>Logo URL:</label>
+        <input type="text" name="header[logo]" value="<%= header.logo %>">
+    </div>
+    <div>
+        <h3>Navigation Links</h3>
+        <% header.navigation.forEach((navItem, index) => { %>
+            <div>
+                <label>Link Name:</label>
+                <input type="text" name="header[navigation][<%= index %>][name]" value="<%= navItem.name %>">
+                <label>Link URL:</label>
+                <input type="text" name="header[navigation][<%= index %>][url]" value="<%= navItem.url %>">
+            </div>
+        <% }) %>
+    </div>
+    <h2>Left Column</h2>
+    <% links.leftColumn.forEach((section, sectionIndex) => { %>
+        <div>
+            <label>Section Title:</label>
+            <input type="text" name="leftColumn[<%= sectionIndex %>][title]" value="<%= section.title %>">
+            <br>
+            <label>Section URL:</label>
+            <input type="text" name="leftColumn[<%= sectionIndex %>][url]" value="<%= section.url %>">
+            <br>
+            <label>Links:</label>
+            <% section.links.forEach((link, linkIndex) => { %>
+                <div>
+                    <input type="text" name="leftColumn[<%= sectionIndex %>][links][<%= linkIndex %>][name]" value="<%= link.name %>">
+                    <input type="text" name="leftColumn[<%= sectionIndex %>][links][<%= linkIndex %>][url]" value="<%= link.url %>">
+                </div>
+            <% }) %>
+        </div>
+    <% }) %>
+
+    <h2>Right Column</h2>
+    <% links.rightColumn.forEach((section, sectionIndex) => { %>
+        <div>
+            <label>Section Title:</label>
+            <input type="text" name="rightColumn[<%= sectionIndex %>][title]" value="<%= section.title %>">
+            <br>
+            <label>Section URL:</label>
+            <input type="text" name="rightColumn[<%= sectionIndex %>][url]" value="<%= section.url %>">
+            <br>
+            <label>Links:</label>
+            <% section.links.forEach((link, linkIndex) => { %>
+                <div>
+                    <input type="text" name="rightColumn[<%= sectionIndex %>][links][<%= linkIndex %>][name]" value="<%= link.name %>">
+                    <input type="text" name="rightColumn[<%= sectionIndex %>][links][<%= linkIndex %>][url]" value="<%= link.url %>">
+                </div>
+            <% }) %>
+        </div>
+    <% }) %>
+
+    <h2>Footer</h2>
+    <div>
+        <h3>Footer Links</h3>
+        <% footer.footerLinks.forEach((link, index) => { %>
+            <div>
+                <label>Link Name:</label>
+                <input type="text" name="footer[footerLinks][<%= index %>][name]" value="<%= link.name %>">
+                <label>Link URL:</label>
+                <input type="text" name="footer[footerLinks][<%= index %>][url]" value="<%= link.url %>">
+            </div>
+        <% }) %>
+    </div>
+
+    <button type="submit">Save Changes</button>
+</form>
+
+<%- include('footer.ejs') %>
+

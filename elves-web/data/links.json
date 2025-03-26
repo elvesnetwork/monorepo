@@ -1,0 +1,122 @@
+{
+  "leftColumn": [
+    {
+      "title": "Learn",
+      "url": "#learn",
+      "links": [
+        {
+          "name": "Documentation",
+          "url": "#docs"
+        },
+        {
+          "name": "Tutorials",
+          "url": "#tutorials"
+        }
+      ]
+    },
+    {
+      "title": "Business & Economy",
+      "url": "#business",
+      "links": [
+        {
+          "name": "B2B",
+          "url": "#b2b"
+        },
+        {
+          "name": "Finance",
+          "url": "#finance"
+        }
+      ]
+    },
+    {
+      "title": "Computers & Internet",
+      "url": "#computers",
+      "links": [
+        {
+          "name": "Internet",
+          "url": "#internet"
+        },
+        {
+          "name": "Software",
+          "url": "#software"
+        }
+      ]
+    },
+    {
+      "title": "Education",
+      "url": "#education",
+      "links": [
+        {
+          "name": "College and University",
+          "url": "#college"
+        },
+        {
+          "name": "K-12",
+          "url": "#k12"
+        }
+      ]
+    }
+  ],
+  "rightColumn": [
+    {
+      "title": "Research",
+      "url": "#research",
+      "links": [
+        {
+          "name": "Whitepaper",
+          "url": "#whitepaper"
+        },
+        {
+          "name": "Roadmap",
+          "url": "#roadmap"
+        },
+        {
+          "name": "",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "title": "Recreation & Sports",
+      "url": "#recreation",
+      "links": [
+        {
+          "name": "Sports",
+          "url": "#sports"
+        },
+        {
+          "name": "Travel",
+          "url": "#travel"
+        }
+      ]
+    },
+    {
+      "title": "Science",
+      "url": "#science",
+      "links": [
+        {
+          "name": "Animals",
+          "url": "#animals"
+        },
+        {
+          "name": "Astronomy",
+          "url": "#astronomy"
+        }
+      ]
+    },
+    {
+      "title": "Social Sciences",
+      "url": "#social-sciences",
+      "links": [
+        {
+          "name": "Archaeology",
+          "url": "#archaeology"
+        },
+        {
+          "name": "Economics",
+          "url": "#economics"
+        }
+      ]
+    }
+  ]
+}

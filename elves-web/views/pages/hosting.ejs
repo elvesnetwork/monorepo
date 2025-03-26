@@ -1,0 +1,102 @@
+<%# pages/hosting.ejs %>
+
+<%- include('../layout', { 
+    title: 'Acorn SH', 
+    description: 'Description', 
+    body: `
+
+    <main class="center-monocolumn">
+        <div class="line"></div>
+        <h1>Hosting</h1>
+        <p>Multi-platform, easy-to-use client. Please install Docker and ensure it is running. You can select what containers you want to run on your computer. We highly recommend you run one or two containers and add more containers later to increase profitability.</p>
+        <br>
+        <!-- File Search Section -->
+        <div class="bordered-section-gray">
+            <div class="section-title-gray">My Github</div>
+            <div class="content-min">
+                <select class="git-provider-dropdown">
+                    <option value="github">GitHub</option>
+                    <!-- Add more providers like GitLab, Bitbucket -->
+                </select>
+                <input type="text" placeholder="Search" class="git-namespace-input">
+                <button class="simple-btn">Search</button>
+            </div>
+        </div>
+        <br>
+
+        <!-- Deploy Upload Section -->
+        <div class="bordered-section-gray">
+            <div class="section-title-gray">My Projects</div>
+                <div class="content-min-3">
+                    <div class="content-min-card">
+                        <div class="content-min-card-title">
+                            <h3>Acorn Web Tree House Garden Hotel</h3>
+                        </div>
+                        <div class="content-min-card-info">
+                            <p>Live</p>
+                            <p>Private</p>
+                            <p>Last updated: 28 days ago</p>
+                            <button class="simple-btn">Deploy</button>
+                            <button class="simple-btn">Delete</button>
+                        </div>
+                    </div>
+
+                    <div class="content-min-card">
+                        <div class="content-min-card-title">
+                            <h3>Acorn Web Tree House Garden Hotel</h3>
+                        </div>
+                        <div class="content-min-card-info">
+                            <p>Live</p>
+                            <p>Private</p>
+                            <p>Last updated: 28 days ago</p>
+                            <button class="simple-btn">Deploy</button>
+                            <button class="simple-btn">Delete</button>
+                        </div>
+                    </div>
+                    
+                    <div class="content-min-card">
+                        <div class="content-min-card-title">
+                            <h3>Acorn Web Tree House Garden Hotel</h3>
+                        </div>
+                        <div class="content-min-card-info">
+                            <p>Live</p>
+                            <p>Private</p>
+                            <p>Last updated: 28 days ago</p>
+                            <button class="simple-btn">Deploy</button>
+                            <button class="simple-btn">Delete</button>
+                        </div>
+                    </div>
+
+                    <div class="content-min-card">
+                        <div class="content-min-card-title">
+                            <h3>Acorn Web Tree House Garden Hotel</h3>
+                        </div>
+                        <div class="content-min-card-info">
+                            <p>Live</p>
+                            <p>Private</p>
+                            <p>Last updated: 28 days ago</p>
+                            <button class="simple-btn">Deploy</button>
+                            <button class="simple-btn">Delete</button>
+                        </div>
+                    </div>
+
+                    <div class="content-min-card">
+                        <div class="content-min-card-title">
+                            <h3>Acorn Web Tree House Garden Hotel</h3>
+                        </div>
+                        <div class="content-min-card-info">
+                            <p>Live</p>
+                            <p>Private</p>
+                            <p>Last updated: 28 days ago</p>
+                            <button class="simple-btn">Deploy</button>
+                            <button class="simple-btn">Delete</button>
+                        </div>
+                    </div>              
+                </div>
+            </div>
+        </div>
+    </main>
+
+    `
+}) %>
+    

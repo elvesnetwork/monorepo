@@ -1,0 +1,84 @@
+<%# pages/account.ejs %>
+
+<%- include('../layout', { 
+    title: 'Account Page', 
+    description: 'Members Only Account Page',
+    body: `
+    
+    <main class="center-monocolumn">
+        <div>
+            <div>
+                <div class="line"></div>
+                <!-- File Search Section -->
+                <h1>Welcome, ${user.email}!</h1>
+                <p>This is the members-only account page.</p>
+                <br>
+                <div class="content-min-2">
+                    <div class="content-min-card-2">
+                        <div class="content-min-card-2-title">
+                            <h3>GPU</h3>
+                        </div>
+                        <div class="content-min-card-2-info">
+                            <img src="https://placehold.co/283x50.png" width="283" height="110" alt="Windows">
+                            <p>Available:</p>
+                            <p>Price:</p>
+                            <button class="simple-btn">Start</button>
+                        </div>
+                    </div>
+            
+                    <div class="content-min-card-2">
+                        <div class="content-min-card-2-title">
+                            <h3>Points</h3>
+                        </div>
+                        <div class="content-min-card-2-info">
+                            <img src="https://placehold.co/283x50.png" width="283" height="110" alt="Windows">
+                            <p>Available:</p>
+                            <p>Price:</p>
+                            <button class="simple-btn">Withdraw</button>
+                        </div>
+                    </div>
+            
+                </div>
+                <section>
+                    <table class="legend">
+                        <thead>
+                            <tr>
+                                <td>Status</td>
+                                <td>Description</td>
+                                <td>Tooltip</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="tooltip online">● online
+                                    <span class="tooltip-text">Up and running</span>
+                                </td>
+                                <td>Up and running</td>
+                                <td>Up and running</td>
+                            </tr>
+                            <tr>
+                                <td class="tooltip joining">● updating
+                                    <span class="tooltip-text">Updating</span>
+                                </td>
+                                <td>Updating</td>
+                                <td>Updating</td>
+                            </tr>
+                            <tr>
+                                <td class="tooltip offline">✖ offline
+                                    <span class="tooltip-text">Offline</span>
+                                </td>
+                                <td>Offline</td>
+                                <td>Offline</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+            </div>
+
+        </div>
+
+    </main>
+    
+    `
+}) %>
