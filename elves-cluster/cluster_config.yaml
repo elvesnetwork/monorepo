@@ -1,0 +1,21 @@
+# A sample Ray cluster configuration file
+cluster_name: "llama-cluster"
+
+head_node:
+  InstanceType: "t2.medium"
+  ImageId: "ami-xxxxxxxx" # Your preferred image ID
+
+worker_nodes:
+  InstanceType: "t2.micro"
+  MinCount: 1
+  MaxCount: 9999
+  ImageId: "ami-xxxxxxxx" # Your preferred image ID
+
+setup_commands:
+  - pip install -U ray
+
+head_setup_commands:
+  - ray start --head --port=6379
+
+worker_setup_commands:
+  - ray start --address=$RAY_HEAD_IP:6379

@@ -1,0 +1,8 @@
+# A sample Ray worker configuration file
+worker_name: "llama-worker"
+
+setup_commands:
+  - pip install -U ray
+
+worker_setup_commands:
+  - ray start --address=$RAY_HEAD_IP:6379
