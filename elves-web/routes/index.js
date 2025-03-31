@@ -5,10 +5,7 @@ const router = express.Router();
 
 // Render the main index page
 router.get('/', (req, res) => {
-    res.render('index-chat');
+    res.render('index');
 });
 
-router.get('/main', (req, res) => {
-    res.render('index-main');
-});
 module.exports = router;
